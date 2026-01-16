@@ -84,19 +84,6 @@ Through building Urban Thread, I learned:
 
 -  Writing clean, maintainable front‑end code
 
-# 🎥 Demo Video
-
-https://github.com/user-attachments/assets/e025e22e-05ce-4610-a8a0-df861b7bd135
-
-
-
-# 📸 ScreenShots
-
-<img width="300" height="700" alt="Screenshot 2025-12-14 014852" src="https://github.com/user-attachments/assets/c821f30d-04d8-4259-ac82-15fba064bb83" />
-<img width="300" height="700" alt="Screenshot 2025-12-14 014929" src="https://github.com/user-attachments/assets/e0aca80b-3759-4634-962e-fd370a396883" />
-<img width="300" height="700" alt="Screenshot 2025-12-14 014943" src="https://github.com/user-attachments/assets/93931ed0-8602-4e9e-9fbf-580fd1696b62" />
-
-
 # 🙌 Acknowledgements
 
 This project was built to strengthen my HTML, CSS, and JavaScript skills by creating a realistic and responsive fashion e‑commerce user interface.
