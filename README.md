@@ -87,7 +87,7 @@ Through building Urban Thread, I learned:
 # 🙌 Acknowledgements
 
 This project was built to strengthen my HTML, CSS, and JavaScript skills by creating a realistic and responsive fashion e‑commerce user interface.
-
+ 
 
 
 
