@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | UrbanThread</title>
+
+    <link rel="icon" href="UT-logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR (same as Home & Collection) -->
+<nav class="navbar">
+    <h1>UrbanThread</h1>
+    <div class="navbar-links">
+        <p class="navbar-link"><a href="index.html">Home</a></p>
+        <p class="navbar-link"><a href="collection.html">Collection</a></p>
+        <p class="navbar-link"><a href="cart.html">Cart</a></p>
+        <p class="navbar-link"><a href="#footerpage">Contact</a></p>
+        <p class="navbar-link"><a href="#about">About</a></p>
+    </div>
+    <div class="nav-menubar" onclick="openSideNavbar()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+
+<!-- SIDE NAVBAR -->
+<div class="side-navbar">
+    <div class="side-navbar-close">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="index.html">Home</a></p>
+        <p class="side-navbar-link"><a href="collection.html">Collection</a></p>
+        <p class="side-navbar-link"><a href="cart.html">Cart</a></p>
+        <p class="side-navbar-link"><a href="#footerpage">Contact</a></p>
+        <p class="side-navbar-link"><a href="#about">About</a></p>
+    </div>
+</div>
+<div class="back-btn-container">
+    <button onclick="goBack()" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back
+    </button>
+</div>
+
+<!-- PRODUCT DETAIL SECTION -->
+<section class="addtocart">
+
+  <!-- LEFT: PRODUCT IMAGE (DYNAMIC) -->
+<img id="detail-image" class="addtocartimg" src="" alt="Product Image">
+
+<!-- RIGHT: PRODUCT DETAILS (DYNAMIC) -->
+<div class="details">
+
+    <p style="color: grey; font-size: 14px;">Fashion</p>
+
+    <h1 id="detail-name"></h1>
+    <h4 id="detail-price"></h4>
+
+        <!-- SIZE SELECTION -->
+      <div class="size-section">
+     <p style="margin-top: 20px;">Select Size</p>
+
+        <div class="sizes">
+        <button type="button" class="size-btn">S</button>
+        <button type="button" class="size-btn">M</button>
+        <button type="button" class="size-btn">L</button>
+        <button type="button" class="size-btn">XL</button>
+        <button type="button" class="size-btn">XXL</button>
+        </div>
+    </div>
+
+        <!-- CTA BUTTONS -->
+        <div style="margin-top: 25px;">
+            <button id="buynow">Buy Now</button>
+            <button id="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- DESCRIPTION -->
+        <div class="product-desc">
+            <h3>Description</h3>
+            <p>
+                 Designed with a focus on comfort, simplicity, and everyday wear, this product
+                 reflects UrbanThread’s modern and minimal aesthetic. Crafted using
+                 quality materials and a clean silhouette, it offers a balanced fit that works
+                 across casual and smart-casual styles. Easy to pair with different outfits,
+                 this piece is made for versatility, durability, and timeless appeal—perfect
+                 for daily use and long-term wear.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+ <!-- contact -->
+         <section class="newsletter">
+        <h2 style="margin-bottom: 20px;">Subscribe & Get 10% Off</h2>
+         <form>
+              <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+              </form>
+        </section>
+
+
+ <!-- footer -->
+<footer id="footerpage">
+  <p>Email: info@urbantrends.com | Phone: +91 82207 88982</p>
+  <p>
+    <a href="https://www.instagram.com/_bharani4_/">Instagram</a> | 
+    <a href="#">Facebook</a> | 
+    <a href="#">Twitter</a>
+  </p>
+  <p style="margin-top: 20px;">&copy; 2025 UrbanTrends. All rights reserved.</p>
+</footer>
+
+
+
+
+<script>
+        // Load product details from localStorage
+document.addEventListener("DOMContentLoaded", function () {
+
+    var name = localStorage.getItem("p_name");
+    var price = localStorage.getItem("p_price");
+    var image = localStorage.getItem("p_image");
+
+    if (name && price && image) {
+        document.getElementById("detail-name").textContent = name;
+        document.getElementById("detail-price").textContent = price;
+        document.getElementById("detail-image").src = image;
+    }
+
+    // Buy Now button functionality
+      document.querySelectorAll('#buynow').forEach(button => {
+        button.addEventListener('click', function () {
+            alert('Order placed!');
+        });
+    });
+
+    // Add to Cart button functionality
+     document.querySelectorAll('#addtocartbtn').forEach(button => {
+        button.addEventListener('click', function () {
+            alert('Added to cart!');
+        });
+    });
+});
+
+function goBack() {
+    window.history.back();
+}
+</script>
+</body>
+</html>
