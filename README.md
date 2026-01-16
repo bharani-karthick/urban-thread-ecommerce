@@ -2,7 +2,7 @@
 
 A modern, fully responsive fashion e‑commerce website built with HTML, CSS, and JavaScript. Urban Thread delivers a clean and intuitive shopping experience across desktop, tablet, and mobile, featuring a fast and functional product search bar.
 
-🔗 Live Demo: https://urbanthreadecommerce.netlify.app/
+🔗 Live Demo: https://urbanthreadstore.netlify.app/
 
 📦 Repository: https://github.com/bharani-karthick/urban-thread-ecommerce
 
